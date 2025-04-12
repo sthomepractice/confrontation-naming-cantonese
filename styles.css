@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#category-select, #practice, #completed {
+    text-align: center;
+}
+
+.image-container {
+    width: 450px;
+    height: 450px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+#word-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#word-text {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}

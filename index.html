@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命名練習</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="category-select">
+        <h1>命名練習</h1>
+        <select id="categories" onchange="startPractice(event)">
+            <option value="" disabled selected>請選擇類別</option>
+        </select>
+    </div>
+    <div id="practice" class="hidden">
+        <div class="image-container">
+            <img id="word-image" src="" alt="Target Word">
+        </div>
+        <p id="word-text"></p>
+        <button id="answer-btn">答案</button>
+        <button id="next-btn" disabled>下一個</button>
+    </div>
+    <div id="completed" class="hidden">
+        <h2>完成</h2>
+        <button id="restart-btn">重新開始練習</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
